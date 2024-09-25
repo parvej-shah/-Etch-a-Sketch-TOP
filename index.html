@@ -20,8 +20,27 @@
       </script>
 </head>
 <body>
-  <div class="h-dvh bg-gradient-to-br from-pink-600 to-pink-300 flex justify-center items-center">
-    <h2 class="text-3xl font-black bg-clip-text bg-gradient-to-l from-rose-900 to-teal-900 text-transparent">Hello Tailwind</h2>
-  </div>
+  <header>
+    <div class="navbar bg-neutral-300 justify-center">
+      <div class="flex-none gap-2">
+        <div class="form-control ">
+          <label for="resulation" class="flex lg:flex-row flex-col items-center text-xl font-bold text-gray-900 gap-2 justify-center">
+            <span>Change Grid Size:<small class="text-sm font-extralight">(Max Grid 100)</small></span>
+            <div class="flex gap-2 items-center">
+              <input id="grid-number" type="text" placeholder="Grid Size" class="input input-bordered min-w-fit bg-neutral-100" />
+          <button id="submit" class="btn bg-neutral-100 text-gray-950 font-medium border-neutral-200 border">Sumbit</button>
+            </div>
+        </label>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto px-2 mt-8">
+    <section id="section" class="grid grid-cols-10 grid-rows-10 border w-[300px] h-[300px] md:w-[500px] md:h-[500px] mx-auto border-red-400">
+      
+    </section>
+  </main>
+  <script src="./app.js"></script>
 </body>
 </html>
